@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Driving Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-page">
+
+        <!-- Header -->
+        <header class="quiz-header">
+
+            <div class="quiz-logo">
+                🚗
+            </div>
+
+            <div class="quiz-title">
+                <h1>Driving Quiz</h1>
+                <p>تاقیکردنەوەی هێماکانی هاتووچۆ</p>
+            </div>
+
+            <!-- Timer -->
+            <div class="timer-box">
+                <span>⏱️</span>
+                <span id="timer">60</span>
+            </div>
+
+        </header>
+
+
+        <!-- Quiz -->
+        <main class="quiz-container">
+
+            <!-- Question number -->
+            <div class="question-number">
+                پرسیاری <span id="questionNumber">1</span>
+            </div>
+
+
+            <!-- Question -->
+            <div class="question-box">
+
+                <h2 id="questionText">
+                    پرسیار لێرە دەردەکەوێت
+                </h2>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="question-image-box">
+                <img id="questionImage"
+                     src="file:///C:/Users/nano/OneDrive/Desktop/driving/p1.jpg"
+                     alt="Question Image">
+
+            </div>
+
+
+            <!-- Answers -->
+            <div class="answers-box">
+
+                <button class="answer-btn" id="answerA">
+                    A) <span></span>
+                </button>
+
+                <button class="answer-btn" id="answerB">
+                    B) <span></span>
+                </button>
+
+                <button class="answer-btn" id="answerC">
+                    C) <span></span>
+                </button>
+
+            </div>
+
+
+            <!-- Next -->
+            <button class="next-btn"
+                    id="nextButton"
+                    style="display: none;">
+                پرسیاری دواتر ➜
+            </button>
+
+        </main>
+
+    </div>
+
+
+    <Script src="questions.js"></Script>
+    <Script src="Script.js"></Script>
+
+</body>
+</html>
